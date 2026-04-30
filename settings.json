@@ -1,105 +1,45 @@
-{
-  "name": "AFK Bot",
-
-  "bot-account": {
-    "username": "Slobot00",
-    "password": "",
-    "type": "offline"
+"utils": {
+  "auto-auth": {
+    "enabled": false
   },
-
-  "server": {
-    "ip": "zack44.aternos.me",
-    "port": 48246,
-    "version": "1.20.4"
-  },
-
-  "try-creative": false,
-
-  "position": {
+  "anti-afk": {
     "enabled": true,
-    "x": 0,
-    "y": 100,
-    "z": 0
+    "sneak": true
   },
-
-  "utils": {
-    "auto-auth": {
-      "enabled": false
-    },
-
-    "anti-afk": {
-      "enabled": true,
-      "sneak": true
-    },
-
-    "chat-messages": {
-      "enabled": true,
-      "repeat": true,
-      "repeat-delay": 120,
-
-      "messages": [
-        "I'm a regular player",
-        "Subscribe to Slobos!",
-        "I like to play Minecraft!"
-      ]
-    },
-
-    "chat-log": true,
-    "auto-reconnect": true,
-    "auto-reconnect-delay": 2000,
-    "max-reconnect-delay": 120000
-  },
-
-  "movement": {
-    "enabled": true,
-
-    "circle-walk": {
-      "enabled": true,
-      "radius": 4,
-      "speed": 3000
-    },
-
-    "look-around": {
-      "enabled": true,
-      "interval": 5000
-    },
-
-    "random-jump": {
-      "enabled": true,
-      "interval": 10000
-    }
-  },
-
-  "modules": {
-    "avoidMobs": true,
-    "combat": true,
-    "beds": false,
-    "chat": true,
-    "console-commands": true
-  },
-
-  "combat": {
-    "attack-mobs": true,
-    "auto-eat": true
-  },
-
-  "beds": {
-    "pick-up-day": false,
-    "place-night": false
-  },
-
-  "discord": {
+  "chat-messages": {
     "enabled": false,
-    "webhookUrl": "YOUR_DISCORD_WEBHOOK_URL_HERE",
-
-    "events": {
-      "connect": true,
-      "disconnect": true,
-      "chat": false
-    }
+    "repeat": false,
+    "repeat-delay": 120,
+    "messages": []
   },
+  "chat-log": true,
+  "auto-reconnect": true,
+  "auto-reconnect-delay": 10000,
+  "max-reconnect-delay": 120000
+},
 
-  "chat": {
-    "respond": true
-  }
+"movement": {
+  "enabled": false
+},
+
+"modules": {
+  "avoidMobs": false,
+  "combat": false,
+  "beds": false,
+  "chat": false,
+  "console-commands": false
+},
+
+"combat": {
+  "attack-mobs": false,
+  "auto-eat": false
+},
+
+"beds": {
+  "pick-up-day": false,
+  "place-night": false
+},
+
+"chat": {
+  "respond": false
 }
